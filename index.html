@@ -1019,6 +1019,25 @@
             background: var(--pink-accent);
             border-radius: 4px;
         }
+        .zeffy-embed-wrap{
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.zeffy-iframe{
+  width: 100%;
+  height: 1100px; /* adjust if you want taller/shorter */
+  border: 0;
+  background: transparent;
+}
+
+.embed-help {
+  margin-top: 1rem;
+  color: #777;
+  font-size: 0.95rem;
+}
+
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -1068,11 +1087,12 @@
             
             <p class="attire-note">Formal Attire Required • Ball Gowns & Suits • Royal Blue & Pink Bling Encouraged</p>
             
-            <div class="cta-group">
-                <a href="#tickets" class="btn btn-primary">Purchase Tickets</a>
-                <a href="#donate" class="btn btn-outline">Make a Donation</a>
-                <a href="#sponsor" class="btn btn-gold">Become a Sponsor</a>
-            </div>
+           <div class="cta-group">
+  <a href="https://www.zeffy.com/en-US/ticketing/bougie-bingo" class="btn btn-primary" target="_blank" rel="noopener">Purchase Tickets</a>
+  <a href="#donate" class="btn btn-outline">Make a Donation</a>
+  <a href="https://www.zeffy.com/en-US/ticketing/bougie-bingo" class="btn btn-gold" target="_blank" rel="noopener">Become a Sponsor</a>
+</div>
+
         </div>
     </section>
 
@@ -1103,11 +1123,21 @@
                 <h2>Secure Your Place</h2>
                 <p>Join us for an exclusive evening of high-stakes bingo, premium prizes, and meaningful impact. Limited availability.</p>
             </div>
-            <div class="embed-section">
-                <div class="embed-container">
-                    <div class="embed-label">Integration Area</div>
-                    <div class="embed-title">Ticket Purchase Platform</div>
-                    <p style="color: #999; margin-top: 1rem;">https://www.zeffy.com/en-US/ticketing/bougie-bingo</p>
+           <div class="embed-section">
+  <div class="zeffy-embed-wrap">
+    <iframe
+      class="zeffy-iframe"
+      src="https://www.zeffy.com/en-US/ticketing/bougie-bingo"
+      title="Bougie Bingo Tickets and Sponsorships"
+      loading="lazy">
+    </iframe>
+
+    <p class="embed-help">
+      If you don’t see the ticketing form above, <a href="https://www.zeffy.com/en-US/ticketing/bougie-bingo" target="_blank" rel="noopener">click here to open Zeffy</a>.
+    </p>
+  </div>
+</div>
+
                 </div>
             </div>
         </div>
@@ -1239,7 +1269,8 @@
                         <li>Program listing</li>
                         <li>Silent auction visibility</li>
                     </ul>
-                    <a href="#contact" class="btn btn-outline" style="width: 100%;">Select</a>
+                    <a <a href="https://www.zeffy.com/en-US/ticketing/bougie-bingo" class="btn btn-outline" style="width: 100%;" target="_blank" rel="noopener">Select</a>
+
                 </div>
                 
                 <div class="tier-card featured">
@@ -1255,8 +1286,8 @@
                         <li>Branded table signage</li>
                         <li>Verbal acknowledgment</li>
                     </ul>
-                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Select</a>
-                </div>
+                    <a href="https://www.zeffy.com/en-US/ticketing/bougie-bingo" class="btn btn-outline" style="width: 100%;" target="_blank" rel="noopener">Select</a>
+
                 
                 <div class="tier-card">
                     <div class="tier-header">
@@ -1272,7 +1303,8 @@
                         <li>Speaking opportunity</li>
                         <li>VIP reception access</li>
                     </ul>
-                    <a href="#contact" class="btn btn-gold" style="width: 100%;">Select</a>
+                   <a href="https://www.zeffy.com/en-US/ticketing/bougie-bingo" class="btn btn-outline" style="width: 100%;" target="_blank" rel="noopener">Select</a>
+
                 </div>
             </div>
         </div>
