@@ -1114,23 +1114,28 @@
 
     <!-- Fundraising Progress Section -->
     <section class="progress-section">
-        <div class="progress-container">
-            <div class="progress-header">
-                <div class="progress-title">Chapter Fundraising Progress</div>
-                <div class="progress-goal">$15,000<span>Goal</span></div>
-            </div>
-            <div class="progress-bar-container">
-                <div class="progress-bar" style="width: 0%;" data-progress="65"></div>
-            </div>
-            <div class="progress-stats">
-                <div>
-                    <span class="progress-current">$5,000</span>
-                    <span style="color: var(--text-muted); margin-left: 0.5rem;">Raised</span>
-                </div>
-                <div class="progress-percentage">65% of Goal</div>
+    <div class="progress-container" data-raised="5000" data-goal="15000">
+        <div class="progress-header">
+            <div class="progress-title">Chapter Fundraising Progress</div>
+            <div class="progress-goal">
+                <span id="goalAmount">$15,000</span>
+                <span>Goal</span>
             </div>
         </div>
-    </section>
+
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progressBar" style="width: 0%;"></div>
+        </div>
+
+        <div class="progress-stats">
+            <div>
+                <span class="progress-current" id="raisedAmount">$5,000</span>
+                <span style="color: var(--text-muted); margin-left: 0.5rem;">Raised</span>
+            </div>
+            <div class="progress-percentage" id="progressPercent">0% of Goal</div>
+        </div>
+    </div>
+</section>
 
     <!-- Beneficiaries Section -->
     <section id="beneficiaries" class="beneficiaries-section">
@@ -1259,64 +1264,63 @@
         </div>
     </section>
 
-    <!-- Sponsorship Section -->
-    <section id="sponsor" class="sponsorship-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Sponsorship Opportunities</h2>
-                <p>Align your brand with excellence and community impact</p>
+   <section id="sponsor" class="sponsorship-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Sponsorship Opportunities</h2>
+            <p>Align your brand with excellence and community impact</p>
+        </div>
+        <div class="tiers-grid">
+            <div class="tier-card">
+                <div class="tier-header">
+                    <h3 class="tier-name">Four Corners</h3>
+                    <div class="tier-price">$1,000</div>
+                </div>
+                <ul class="tier-benefits">
+                    <li>Logo recognition on event materials</li>
+                    <li>Social media acknowledgment</li>
+                    <li>Two reserved seats</li>
+                    <li>Program listing</li>
+                    <li>Silent auction visibility</li>
+                </ul>
+                <a href="https://www.giveffect.com/campaigns/44376-bougie-bingo" class="tier-btn" target="_blank">Select</a>
             </div>
-            <div class="tiers-grid">
-                <div class="tier-card">
-                    <div class="tier-header">
-                        <h3 class="tier-name">Four Corners</h3>
-                        <div class="tier-price">$1,000</div>
-                    </div>
-                    <ul class="tier-benefits">
-                        <li>Logo recognition on event materials</li>
-                        <li>Social media acknowledgment</li>
-                        <li>Two reserved seats</li>
-                        <li>Program listing</li>
-                        <li>Silent auction visibility</li>
-                    </ul>
-                    <a href="https://www.giveffect.com/campaigns/44376-bougie-bingo" class="tier-btn" target="_blank">Select</a>
+            
+            <div class="tier-card">
+                <div class="tier-header">
+                    <h3 class="tier-name">Picture Frame</h3>
+                    <div class="tier-price">$2,500</div>
                 </div>
-                
-                <div class="tier-card">
-                    <div class="tier-header">
-                        <h3 class="tier-name">Picture Frame</h3>
-                        <div class="tier-price">$2,500</div>
-                    </div>
-                    <ul class="tier-benefits">
-                        <li>Prominent logo placement</li>
-                        <li>Dedicated social feature</li>
-                        <li>Four reserved seats</li>
-                        <li>Full-page program recognition</li>
-                        <li>Branded table signage</li>
-                        <li>Verbal acknowledgment</li>
-                    </ul>
-                    <a href="https://www.giveffect.com/campaigns/44376-bougie-bingo" class="tier-btn" target="_blank">Select</a>
+                <ul class="tier-benefits">
+                    <li>Prominent logo placement</li>
+                    <li>Dedicated social feature</li>
+                    <li>Four reserved seats</li>
+                    <li>Full-page program recognition</li>
+                    <li>Branded table signage</li>
+                    <li>Verbal acknowledgment</li>
+                </ul>
+                <a href="https://www.giveffect.com/campaigns/44376-bougie-bingo" class="tier-btn" target="_blank">Select</a>
+            </div>
+            
+            <div class="tier-card">
+                <div class="tier-header">
+                    <h3 class="tier-name">Blackout</h3>
+                    <div class="tier-price">$5,000</div>
                 </div>
-                
-                <div class="tier-card">
-                    <div class="tier-header">
-                        <h3 class="tier-name">Blackout</h3>
-                        <div class="tier-price">$5,000</div>
-                    </div>
-                    <ul class="tier-benefits">
-                        <li>Premier brand positioning</li>
-                        <li>Comprehensive media package</li>
-                        <li>Eight reserved seats</li>
-                        <li>Cover program placement</li>
-                        <li>Exclusive table presentation</li>
-                        <li>Speaking opportunity</li>
-                        <li>VIP reception access</li>
-                    </ul>
-                    <a href="https://www.giveffect.com/campaigns/44376-bougie-bingo" class="tier-btn" target="_blank">Select</a>
-                </div>
+                <ul class="tier-benefits">
+                    <li>Premier brand positioning</li>
+                    <li>Comprehensive media package</li>
+                    <li>Eight reserved seats</li>
+                    <li>Cover program placement</li>
+                    <li>Exclusive table presentation</li>
+                    <li>Speaking opportunity</li>
+                    <li>VIP reception access</li>
+                </ul>
+                <a href="https://www.giveffect.com/campaigns/44376-bougie-bingo" class="tier-btn" target="_blank">Select</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer id="contact">
@@ -1363,28 +1367,50 @@
         </div>
     </footer>
 
-    <script>
-        // Animate progress bar on scroll
-        const progressBar = document.querySelector('.progress-bar');
-        const targetProgress = progressBar.getAttribute('data-progress');
-        
+   <script>
+    // Progress bar calculation + animation
+    const progressContainer = document.querySelector('.progress-container');
+    const progressBar = document.getElementById('progressBar');
+    const progressPercent = document.getElementById('progressPercent');
+    const raisedAmount = document.getElementById('raisedAmount');
+    const goalAmount = document.getElementById('goalAmount');
+
+    if (progressContainer && progressBar && progressPercent && raisedAmount && goalAmount) {
+        const raised = parseFloat(progressContainer.dataset.raised) || 0;
+        const goal = parseFloat(progressContainer.dataset.goal) || 1;
+
+        const percent = Math.min((raised / goal) * 100, 100);
+        const roundedPercent = Math.round(percent);
+
+        const formatCurrency = (value) =>
+            value.toLocaleString('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                maximumFractionDigits: 0
+            });
+
+        raisedAmount.textContent = formatCurrency(raised);
+        goalAmount.textContent = formatCurrency(goal);
+        progressPercent.textContent = `${roundedPercent}% of Goal`;
+
         const observerOptions = {
             threshold: 0.5
         };
-        
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     setTimeout(() => {
-                        progressBar.style.width = targetProgress + '%';
+                        progressBar.style.width = `${percent}%`;
                     }, 300);
                     observer.unobserve(entry.target);
                 }
             });
         }, observerOptions);
-        
-        observer.observe(progressBar);
-    </script>
+
+        observer.observe(progressContainer);
+    }
+</script>
 
 </body>
 </html>
