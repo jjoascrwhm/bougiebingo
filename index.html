@@ -1353,74 +1353,71 @@ alert("Event link copied! You can now paste and share it.");
 </section>
 
     <!-- Footer -->
-    <footer id="contact">
+   <!-- Footer -->
+<footer id="contact">
+    <div class="footer-grid">
         <div class="footer-section">
-    <h4>Connect</h4>
+            <h4>Connect</h4>
 
-    <div class="social-links">
-        <a href="https://www.facebook.com/epsnm/" aria-label="Facebook" target="_blank">f</a>
-        <a href="https://www.instagram.com/epsnmjjoa/" aria-label="Instagram" target="_blank">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-            </svg>
-        </a>
+            <div class="social-links">
+                <a href="https://www.facebook.com/epsnm/" aria-label="Facebook" target="_blank">f</a>
+                <a href="https://www.instagram.com/epsnmjjoa/" aria-label="Instagram" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                </a>
+            </div>
+
+            <p style="margin:1.2rem 0;color:var(--text-muted);font-style:italic;">
+                Help us spread the word
+            </p>
+
+            <a href="#" class="btn btn-outline footer-btn" onclick="shareEvent(); return false;">
+                Share Event
+            </a>
+
+            <a href="https://www.canva.com/design/DAHBT4qtN1s/iuilpZBNjEGsAlLZ4wJn3Q/view?utm_content=DAHBT4qtN1s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h28e0baa7f9"
+               class="btn btn-primary footer-btn" target="_blank">
+                View Flyer
+            </a>
+        </div>
+
+        <div class="footer-section">
+            <h4>Inquire</h4>
+            <form class="contact-form" action="https://formsubmit.co/jjoaepsnmfc@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <textarea name="message" rows="3" placeholder="Message" required></textarea>
+
+                <input type="hidden" name="_subject" value="Bougie Bingo Website Inquiry">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://jjoascrwhm.github.io/bougiebingo/#contact">
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <div class="footer-section footer-info">
+            <h4>Chapter Information</h4>
+            <p><strong>El Paso–Southern New Mexico Chapter</strong><br>
+            Jack and Jill of America, Inc.</p>
+            <p>PO Box 972174<br>
+            El Paso, TX 79997</p>
+            <p><a href="https://www.jackandjillinc.org/chapter/elpasosouthernnewmexico/" target="_blank">Visit Chapter Website</a></p>
+        </div>
     </div>
 
-    <p style="margin:1.2rem 0;color:var(--text-muted);font-style:italic;">
-        Help us spread the word
-    </p>
-
-    <a href="#" class="btn btn-outline footer-btn" onclick="shareEvent(); return false;">
-        Share Event
-    </a>
-
-    <a href="https://www.canva.com/design/DAHBT4qtN1s/iuilpZBNjEGsAlLZ4wJn3Q/view?utm_content=DAHBT4qtN1s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h28e0baa7f9"
-       class="btn btn-primary footer-btn" target="_blank">
-        View Flyer
-    </a>
-</div>
-            
-            <div class="footer-section">
-                <h4>Inquire</h4>
-               <form class="contact-form" action="https://formsubmit.co/jjoaepsnmfc@gmail.com" method="POST">
-
-<input type="text" name="name" placeholder="Full Name" required>
-
-<input type="email" name="email" placeholder="Email Address" required>
-
-<textarea name="message" rows="3" placeholder="Message" required></textarea>
-
-<input type="hidden" name="_subject" value="Bougie Bingo Website Inquiry">
-
-<input type="hidden" name="_captcha" value="false">
-
-<input type="hidden" name="_template" value="table">
-
-<input type="hidden" name="_next" value="https://jjoascrwhm.github.io/bougiebingo/#contact">
-
-<button type="submit">Send</button>
-
-</form>
-            </div>
-            
-            <div class="footer-section footer-info">
-                <h4>Chapter Information</h4>
-                <p><strong>El Paso–Southern New Mexico Chapter</strong><br>
-                Jack and Jill of America, Inc.</p>
-                <p>PO Box 972174<br>
-                El Paso, TX 79997</p>
-                <p><a href="https://www.jackandjillinc.org/chapter/elpasosouthernnewmexico/" target="_blank">Visit Chapter Website</a></p>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2026 El Paso Southern New Mexico Chapter of Jack and Jill of America, Inc.</p>
-            <p style="margin-top: 0.5rem; font-size: 0.8rem;">Proceeds benefit the Jack and Jill of America Foundation (a 501(c)(3) organization) and the Boys & Girls Clubs of El Paso (a 501(c)(3) organization)</p>
-        </div>
-    </footer>
-
+    <div class="footer-bottom">
+        <p>&copy; 2026 El Paso Southern New Mexico Chapter of Jack and Jill of America, Inc.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem;">
+            Proceeds benefit the Jack and Jill of America Foundation (a 501(c)(3) organization) and the Boys & Girls Clubs of El Paso (a 501(c)(3) organization)
+        </p>
+    </div>
+</footer>
+    
    <script>
     // Progress bar calculation + animation
     const progressContainer = document.querySelector('.progress-container');
