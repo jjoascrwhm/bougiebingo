@@ -1040,6 +1040,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 <base target="_blank">
 </head>
+    <script>
+
+function shareEvent() {
+
+const shareData = {
+title: "Bougie Bingo – Jack and Jill of America",
+text: "Join us for Bougie Bingo Night ✨ An elegant evening of bingo, prizes, and philanthropy benefiting youth in El Paso. 🎟 Tickets available now!",
+url: "https://jjoascrwhm.github.io/bougiebingo/"
+};
+
+if (navigator.share) {
+
+navigator.share(shareData);
+
+} else {
+
+navigator.clipboard.writeText(shareData.url);
+
+alert("Event link copied! You can now paste and share it.");
+
+}
+
+}
+
+</script>
 <body>
 
     <!-- Navigation -->
@@ -1324,20 +1349,36 @@
 
     <!-- Footer -->
     <footer id="contact">
-        <div class="footer-grid">
-            <div class="footer-section">
-                <h4>Connect</h4>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/epsnm/" aria-label="Facebook" target="_blank">f</a>
-                    <a href="https://www.instagram.com/epsnmjjoa/" aria-label="Instagram" target="_blank">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-                        </svg>
-                    </a>
-                </div>
-                <a href="#" class="btn btn-outline footer-btn">Share Event</a>
+        <div class="footer-section">
+    <h4>Connect</h4>
+
+    <div class="social-links">
+        <a href="https://www.facebook.com/epsnm/" aria-label="Facebook" target="_blank">f</a>
+        <a href="https://www.instagram.com/epsnmjjoa/" aria-label="Instagram" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+        </a>
+    </div>
+
+    <p style="margin:1.2rem 0;color:var(--text-muted);font-style:italic;">
+        Help us spread the word
+    </p>
+
+    <a href="#" class="btn btn-outline footer-btn" onclick="shareEvent(); return false;">
+        Share Event
+    </a>
+
+    <a href="https://www.canva.com/design/DAHBT4qtN1s/iuilpZBNjEGsAlLZ4wJn3Q/view?utm_content=DAHBT4qtN1s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h28e0baa7f9"
+       class="btn btn-primary footer-btn" target="_blank">
+        View Flyer
+    </a>
+</div>
+           <a href="#" class="btn btn-outline footer-btn" onclick="shareEvent(); return false;">
+Share Event
+</a>
                 <a href="https://www.canva.com/design/DAHBT4qtN1s/iuilpZBNjEGsAlLZ4wJn3Q/view?utm_content=DAHBT4qtN1s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h28e0baa7f9" class="btn btn-primary footer-btn" target="_blank">View Flyer</a>
             </div>
             
